@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'index1.css' %}">
+<body>
+<div class="container" >
+  <h2>Calculation</h2>
+<form method="POST" class="form-class">
+    {% csrf_token %}
+  <div>
+    <label>Equation: </label>
+    <input class="input_class" type="text" name="expression"  placeholder="Enter Expression" class="">
+  </div>
+  <button class="submit-button" type="submit">Submit</button>
+</form>
+<div class="footer">
+  <p>Adireddi Chandirka Lavanya</p>
+  <p>Computer Science and Engineering</p>
+  <p>Indian Institute of Techonology Kharagpur</p>
+</div>
+<!--  <hr class="solid">-->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+{% load static %}
+<html>
+<link rel="stylesheet" href="{% static 'index1.css' %}">
+<body>
+<!--    Converted input is {{ field }}-->
+<h2>Results</h2>
+<table>
+    <tbody>
+	{% for img in images %}
+      <tr>
+		<img src="media/Handwritten_Math_Symbols/{{img}}" width="120"/>
+      </tr>
+	  {% endfor %}
+	</tbody>
+</table>
+<div class="container-1">
+    <div class="grid-container">
+        <div class="grid-item">Predicted Expression: {{ expr_preds }}</div>
+        <div class="grid-item">Actual Expression = {{ actual_expr }}</div>
+        <div class="grid-item">Predicted Result: {{ res_preds }}</div>
+        <div class="grid-item">Actual Result: {{ actual_res }}</div>
+    </div>
+
+    <table class="table-1">
+        <tr class="tr-1">
+            <td class="td-1" >
+                Predicted digits
+            </td>
+            {% for img in chars %}
+          <td class="td-1">
+              {{ img }}
+          </td>
+          {% endfor %}
+        </tr>
+        <tr class="tr-1">
+            <td class="td-1">
+                Predicted with Probability(rounded)
+            </td>
+            {% for img in Selected_probs %}
+          <td class="td-1">
+              {{ img }}
+          </td>
+          {% endfor %}
+        </tr>
+    </table>
+</div>
+
+<div class="footer">
+  <p>Adireddi Chandirka Lavanya</p>
+  <p>Computer Science and Engineering</p>
+  <p>Indian Institute of Techonology Kharagpur</p>
+</div>
+</body>
+</html>
