@@ -241,6 +241,16 @@ def nine_generate():
             plus_obj.save()
             final_p.close()
 
+def meta_data_generate():
+    char_name_list = ['+', '-', '*', '/', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    number_of_fields_list = [16903, 33996, 3250, 867, 6913, 26519, 26140, 10908, 7395, 3544, 3117, 2908, 3067, 3736]
+    for i in range(14):
+        obj = meta_data_table()
+        obj.char_name = char_name_list[i]
+        obj.number_of_fields = number_of_fields_list[i]
+        obj.save()
+
+
 plus_generate()
 minus_generate()
 times_generate()
@@ -255,3 +265,4 @@ six_generate()
 seven_generate()
 eight_generate()
 nine_generate()
+meta_data_generate()
