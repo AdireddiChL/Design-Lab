@@ -1,6 +1,6 @@
 # Design-Lab
 
-## cloning the Repository
+## Cloning the Repository
 
 ```bash
 git clone https://github.com/AdireddiChL/Design-Lab.git
@@ -69,13 +69,13 @@ python manage.py migrate
 python manage.py shell < script.py
 ```
 
-## create a superuser
+## Create a superuser
 
 ```bash
 python manage.py createsuperuser
 ```
 
-## run the server
+## Run the server
 
 ```bash
 python manage.py runserver
