@@ -52,7 +52,7 @@ The final folder structure Should be like
 +-- data.zip
 ```
 
-## Initate the Database
+## Initiate the Database
 
 - run the following commands to initiate the Database.
 
