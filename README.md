@@ -9,7 +9,7 @@ cd Design-Lab
 
 ## Installing the required packages
 
-- if there is a virtual environment istalled in the system follow the bellow commands
+- if there is a virtual environment installed in the system follow the bellow commands
 	``` bash
 	python3 -m venv venv/
 	source venv/bin/activate
@@ -63,7 +63,7 @@ python manage.py migrate
 
 ## Populate the database
 
-- run the following Django Shell Script to populate the databse.
+- run the following Django Shell Script to populate the database.
 
 ```bash
 python manage.py shell < script.py
